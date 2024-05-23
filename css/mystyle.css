@@ -1,0 +1,532 @@
+/* Customization of the site as a whole */
+body {
+	background-color: #fbfdff;
+	font-family: helvetica, arial, sans-serif;
+	margin: 0;
+}
+* {
+	box-sizing: border-box;
+}
+
+/* Customization of the header at the top of the website */
+header {
+	background-color: #e0eff9;
+	padding: 5px;
+	justify-content: space-between;
+}
+
+/* Customization of the logo of the website */
+.logo .img {
+	width: 346px;
+	height: 111px;
+	margin: 0;
+}
+
+/* Customization of the navigation bar */
+.navbar {
+	overflow: hidden;
+	background-color: #0f034e;
+	transition: .3s ease-in-out;
+}
+
+/* Customization of the links in the navigation bar */
+.navbar a {
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Selects active class for current page */
+.active {
+	background-color: #156082;
+	color: white;
+}
+
+/* Customization of the navigation bar dropdown */
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+/* Customization of the dropdown button */
+.dropdown .dropbtn {
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+/* Customization of the navigation bar links when mouse hovers over them */
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: #2091c4;
+	transition: 0.3s;
+}
+
+/* Customization of the navigation bar dropdown content */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+/* Customization of the links in the navigation bar dropdown */
+.dropdown-content a {
+	float: none;
+	color: grey;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	/* Fade in animation for the drop down menu for several different browsers */
+	animation-duration: 0.5s;
+    animation-name: fadeInFromNone;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-name: fadeInFromNone;
+    -webkit-animation-fill-mode: forwards;
+    -ms-animation-duration: 0.5s;
+    -ms-animation-name: fadeInFromNoneIE;
+    -ms-animation-fill-mode: forwards;
+}
+
+/* Key frames animation webkit for older versions of chrome and safari */
+@-webkit-keyframes fadeInFromNone {
+    0% {opacity: 0}
+    1% {opacity: 0}
+    100% {opacity: 1}
+}
+/* Key frames animation for internet explorer */
+@keyframes fadeInFromNoneIE {
+    0% {opacity: 0}
+    1% {opacity: 0}
+	100% {opacity: 1}
+}
+/* Key frames animation for modern browsers that follow standard CSS specifications */
+@keyframes fadeInFromNone {
+    0% {opacity: 0}
+    1% {opacity: 0}
+    100% {opacity: 1}
+}
+
+/* Customization of the navigation bar dropdown text when mouse hovers over them */
+.dropdown-content a:hover {
+	background-color: #e0e0e0;
+}
+
+/* Shows the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+	opacity: 1;
+	visibility: visible; 
+}
+
+/* Responsive Design for the navigation bar, heighter max with threshold to prevent stacking */
+@media screen and (max-width: 925px) {
+	/* Selects navbar links and the drop btn class in dropdown class */
+	.navbar a, .dropdown .dropbtn {
+		display: none;
+	}
+	/* Selects all elements in the navbar and responsive class */
+	.navbar.responsive {
+		position: relative;
+	}
+	/* Selects links in both navbar and responsive class */
+	.navbar.responsive a {
+		float: none;
+		display: block;
+	  	text-align: left;
+	}
+	/* Selects dropdown in the navbar and responsive class */
+	.navbar.responsive .dropdown {
+		float: none;
+	}
+	/* Selects dropdown content in the navbar and responsive class */
+	.navbar.responsive .dropdown-content {
+		position: relative;
+		/* Dropdown stays open in responsive so user knows what page they are on - removing this line of code makes the dropdown work normally */
+		display: block;
+	}
+	/* Selects dropdown button in the navbar and responsive class */
+	.navbar.responsive .dropdown .dropbtn {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+	/* Selects hamburger class (menu icon) */
+	.hamburger {
+		cursor: pointer;
+		float: right;
+		transition: ease-in-out.3s;
+		position: relative;
+		padding-right: 5px;
+		display: block;
+	}
+	/* CSS for the 3 bars, adding a transition effect as well so when the animation is run there is a smooth transition */
+	.bar1, .bar2, .bar3 {
+		width: 35px;
+		height: 5px;
+		background-color: white;
+		margin: 6px 0;
+		transition: 0.3s;
+	}
+	/* Animation, where bars 1 and 3 will move to a 45 degree angle and the middle bar will disappear */
+	.change .bar1 {transform: translate(0, 11px) rotate(-45deg);}
+	.change .bar2 {opacity: 0;}
+	.change .bar3 {transform: translate(0, -11px) rotate(45deg);}
+}
+
+/* Customization of Header 1 */
+h1 {
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	font-family: helvetica, arial, sans-serif;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 5px;
+	padding-top: 20px;
+	
+}
+
+/* Customization of Header 2 */
+h2 {
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: helvetica, arial, sans-serif;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Customization of Header 3 */
+h3 {
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: helvetica, arial, sans-serif;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* Customization of paragraph text */
+p, ul, ol {
+	color: #000;
+	text-align: left;
+	font-weight: normal;
+	font-size: 18px;
+	font-family: helvetica, arial, sans-serif;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+/* Customization of banner class */
+.banner {
+	position: relative;
+	width: 100%;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Customization of h1 element in banner class */
+.banner h1 {
+	text-align: center;
+	font-size: 50px;
+	margin: 15px;
+	color: #000;
+}
+
+/* Customization of dividing lines */
+hr.rounded {
+	border-top: 6px dotted #8ec840;
+	border-bottom: none;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+/* Responsive design for resizing images */
+img {
+	max-width: 100%;   
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}	
+/* Responsive design if the browser window is 600px or smaller */
+@media screen and (max-width: 600px) {
+	/* Customization of home-banner h1 element */
+	.banner h1 {
+		font-size: 25px;
+	}
+}
+
+/* Customization of problem statement text */
+.pagecontent h2 {
+    font-family: Helvetica, sans-serif;
+    color: #000000;
+    font-weight: bold;
+    font-size:30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+	text-align: center;
+}
+.pagecontent h3 {
+    font-family: Helvetica, sans-serif;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    flex: 0 0 100%;
+	text-align: center;
+}
+.pagecontent p { 
+    font-family: Helvetica, sans-serif;
+    color: #000000;
+    font-weight: normal;
+    font-size:18px;
+	text-align: center;
+	padding: 0% 10%;
+}
+/* Sets the width and text colour for the columns that make up the footer */
+.column {
+    float: left;
+    width: 25%;
+	text-align: center;
+}
+
+/* Customization of header 3 text in columns */
+.column h3 {
+    margin-bottom: 0px;
+    color: #000;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Creates a pseudo-element that resets the floats for any elements that come after this part of the footer */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Customization of social icons */
+.fab, .fas {
+	padding: 15px;
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	transition: .3s ease-in-out;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+/* Customization of social icons - makes icon semi-transparent when user hovers over it */
+.fab:hover, .fas:hover{
+    color: #6692cd;
+}
+
+/* Customization of Email icon */
+.fa-envelope {
+	background: #000;
+	color: #FFF;
+}
+
+/* Customization of LinkedIn icon */
+.fa-linkedin {
+	background: #000;
+	color: #FFF;
+}
+
+/* Customization of footer background */
+footer {
+	position: static;
+	background-color: #0f034e;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* Customization of footer p element */
+.footertext p {
+	color: #FFF;
+	text-align: center;
+	font-weight: normal;
+	font-size: 14px;
+	font-family: helvetica, arial, sans-serif;
+}
+
+/* inspiration: https://www.w3schools.com/css/css3_buttons.asp */
+/* Customization of the button container */
+.buttoncontainer {
+	margin: 0 5px 25px;
+	background-color: transparent;
+	display: flex;
+	text-align: center;
+}
+/* Customization on the viewbutton */
+.collabbutton {
+	background-color: #2091c4;
+	border: none;
+	color: white;
+	justify-content: center;
+	text-decoration: none;
+	display: flex;
+	font-size: 18px;
+	flex-basis: 100%;
+	margin-left: 25%;
+	margin-right: 25%;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+	border-radius: 10px;
+}
+/* Adding a hover on the viewbutton */
+.collabbutton:hover {
+	background-color: #79d0e6;
+	transition: 0.3s;
+}
+
+/* Responsive Flexbox container that arranges cards */
+.team-flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 50px;
+	gap: 50px;
+}
+
+/* Container for a team card, sets size and 3D perspective with a background colour that makes sense */
+.team-card-container {
+	height: 350px;
+	width: 250px;
+	perspective: 500px;
+	background-color: #e0eff9;
+	/* border that goes within the container */
+	border: 6px outset gray;
+	box-shadow: 0 8px 16px 0 rgba(37, 34, 34, 0.2);
+	border-radius: 15px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+}
+
+/* Inner container that manages the flip transition effect */
+.team-card-container-inner {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	border-radius: 19px;
+}
+
+/* Back of the card styling */
+.team-card-back {
+	/* Flip the back to begin with so it can be flipped on hover */
+	transform: rotateY(180deg);
+}
+
+/* The flip effect when the card is hovered over */
+.team-card-container:hover .team-card-container-inner {
+	transform: rotateY(180deg);
+	box-shadow:	0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Styling that both sides have in common */
+.team-card-front, .team-card-back {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	/* Hides the other side of the card so both aren't displayed */
+	backface-visibility: hidden;
+	/* This webkit property is necessary for Safari and older versions of Chrome*/
+	-webkit-backface-visibility: hidden; 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background-color: #e0eff9;
+	border-radius: 19px;
+}
+
+/* Styling for the name of the team member on the contact card */
+.team-card-front h2 {
+	position: absolute;
+	top: 68%;
+	text-align: center;
+	color: black;
+	font-weight: normal;
+	font-size: 20px;
+	font-family: helvetica, arial, sans-serif;
+}
+
+/* Styling for the front card text */
+.team-card-front p {
+	position: absolute;
+	top: 75%;
+	text-align: center;
+	color: black;
+	font-weight: normal;
+	font-size: 16px;
+	font-family: helvetica, arial, sans-serif;
+}
+
+/* Styling for the back card text */
+.team-card-back p {
+	color: #000;
+	text-align: center;
+	font-weight: normal;
+	font-size: 14px;
+	font-family: helvetica, arial, sans-serif;
+}
+
+/* Image styling, made to fill the top of the card and only rounding the top 2 corners */
+.team-card-front img {
+	width: 100%;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	border-radius: 19px 19px 0 0;
+}
+
+/* Customization of back to top button */
+/* Inspiration: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+#backtotop {
+	position: fixed;
+	bottom: 20px; 
+	right: 20px; 
+	z-index: 99; 
+	border: none;
+	background-color: #91c946; 
+	color: #fff; 
+	padding: 15px; 
+	border-radius: 6px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+/* Adding transition and color to back to top button */
+#backtotop:hover {
+	background-color: #bddf90;
+	transition: 0.3s;
+}
