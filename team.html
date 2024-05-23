@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HRS Collab 2409</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/mystyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+	
+<body>
+
+<!-- --------------------
+- Section:	BACK TO TOP BUTTON
+- Inspired By: 	https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+--------------------- -->
+<button onclick="topFunction()" id="backtotop" title="Back to top">Back to top</button>
+<script src="js/javascript.js"></script>
+		
+<header>
+	<!-- When you click the top banner or logo, it will link back to the homepage -->
+	<!-- Logo created in Canva -->
+	<a href = "index.html">
+		<div class="logo">
+			<img src= "images/hrslogo.png" alt="HRS logo">
+		</div>
+	</a>
+</header>
+
+<!-- --------------------
+- Section:	NAVIGATION BAR
+- Inspired By: 	https://helenplesko.github.io/a3web/
+				https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
+               	https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
+				https://www.w3schools.com/howto/howto_css_menu_icon.asp
+--------------------- -->
+<!-- This NavBar will appear on every page of our website -->
+<!-- The NavBar will adjust itself using responsive design depending on the user's device -->
+<div class="navbar" id="myNav">
+	<!-- Creating a div to store the hamburger menu icon with a function that run when the user clicks the icon -->
+	<div class="hamburger" onclick="responsiveNav(this)">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	  </div>
+	<a href="index.html">Home</a>
+	<a href="solutions.html">Solutions</a>
+	<div class="dropdown">
+		<button class="dropbtn">Methodology</button>
+		<!-- Attempts dropdown menu content -->
+		<div class="dropdown-content">
+			<a href="data.html">Data Acquisition and Pre-Processing</a>
+			<a href="spatial.html">Spatial Analysis and Spatial Statistics</a>
+			<a href="visualization.html">Visualization</a>
+			<a href="customization.html">Programming and Customization</a>
+		</div> 
+	</div>
+	<a href="team.html" class="active">Team</a>
+</div>
+
+<!-- JS script for hamburger menu animation and responsive navbar -->
+<script src="js/javascript.js"></script>
+
+<div class="banner">
+	<h1>Meet the Team</h1>
+</div>
+	
+<hr class="rounded">
+
+<!-- Client Section -->
+<div class="aboutproject">
+	<!-- Flippable contact cards of the team members -->
+<div class="team-flex-container">
+	<div class="team-card-container">
+		<div class="team-card-container-inner">
+			<div class="team-card-front">
+				<img src="images/hp.jpg" alt="headshot Helen">
+				<h2>Helen Plesko</h2>
+				<p>GIS Applications Specialist</p>
+			</div>
+			<div class="team-card-back">
+				<p></p>
+				<a href="#" class="fas fa-envelope" title="Helen's email" target="_blank"></a>
+				<a href="#" class="fab fa-linkedin" title="Helen's LinkedIn page" target="_blank"></a>
+			</div>
+		</div>
+	</div>
+	<div class="team-card-container">
+		<div class="team-card-container-inner">
+			<div class="team-card-front">
+				<img src="images/rs.jpg" alt="headshot Rahul">
+				<h2>Rahul Saravanabavan</h2>
+				<p>GIS Applications Specialist</p>
+			</div>
+			<div class="team-card-back">
+				<p></p>
+				<a href="#" class="fas fa-envelope" title="Rahul's email" target="_blank"></a>
+				<a href="#" class="fab fa-linkedin" title="Rahul's LinkedIn page" target="_blank"></a>
+			</div>
+		</div>
+	</div>
+	<div class="team-card-container">
+		<div class="team-card-container-inner">
+			<div class="team-card-front">
+				<img src="images/sw.jpg" alt="headshot Sharmila">
+				<h2>Sharmila Wagle</h2>
+				<p>GIS Cartographic Specialist</p>
+			</div>
+			<div class="team-card-back">
+				<p></p>
+				<a href="#" class="fas fa-envelope" title="Sharmila's email" target="_blank"></a>
+				<a href="#" class="fab fa-linkedin" title="Sharmila's LinkedIn page" target="_blank"></a>
+			</div>
+		</div>
+	</div>
+</div>
+	
+</div>
+
+<footer>
+	<div class="footertext">
+		<p>This website is submitted in partial fulfillment of the requirements of the Geographic Information Systems Specialist program at Sir Sandford Fleming College.</p>
+		<p>Copyright 2024 Team HRS, Sir Sandford Fleming College</p>
+		<img src="images/hrspin.png" alt="mini logo">
+	</div>
+</footer>
+
+</body>
+</html>

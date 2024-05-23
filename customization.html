@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>HRS Collab 2409</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/mystyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+	
+<body>
+
+<!-- --------------------
+- Section:	BACK TO TOP BUTTON
+- Inspired By: 	https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+--------------------- -->
+<button onclick="topFunction()" id="backtotop" title="Back to top">Back to top</button>
+<script src="js/javascript.js"></script>
+		
+<header>
+	<!-- When you click the top banner or logo, it will link back to the homepage -->
+	<!-- Logo created in Canva -->
+	<a href = "index.html">
+		<div class="logo">
+			<img src= "images/hrslogo.png" alt="HRS logo">
+		</div>
+	</a>
+</header>
+
+<!-- --------------------
+- Section:	NAVIGATION BAR
+- Inspired By: 	https://helenplesko.github.io/a3web/
+				https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
+               	https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp
+				https://www.w3schools.com/howto/howto_css_menu_icon.asp
+--------------------- -->
+<!-- This NavBar will appear on every page of our website -->
+<!-- The NavBar will adjust itself using responsive design depending on the user's device -->
+<div class="navbar" id="myNav">
+	<!-- Creating a div to store the hamburger menu icon with a function that run when the user clicks the icon -->
+	<div class="hamburger" onclick="responsiveNav(this)">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	  </div>
+	<a href="index.html">Home</a>
+	<a href="solutions.html">Solutions</a>
+	<div class="dropdown">
+		<button class="dropbtn">Methodology</button>
+		<!-- Attempts dropdown menu content -->
+		<div class="dropdown-content">
+			<a href="data.html">Data Acquisition and Pre-Processing</a>
+			<a href="spatial.html">Spatial Analysis and Spatial Statistics</a>
+			<a href="visualization.html">Visualization</a>
+			<a href="customization.html" class="active">Programming and Customization</a>
+		</div> 
+	</div>
+	<a href="team.html">Team</a>
+</div>
+
+<!-- JS script for hamburger menu animation and responsive navbar -->
+<script src="js/javascript.js"></script>
+
+<div class="banner">
+	<h1>Methodology: Programming and Customization</h1>
+</div>
+	
+<hr class="rounded">
+
+<!-- Client Section -->
+<div class="aboutproject">
+	<h2>Programming</h2>
+	
+	<h3>ArcGIS Hub</h3>
+	<p></p>
+	<img src= "" alt="">
+	
+	<hr class="rounded">
+	
+	<h2>Customization</h2>
+	
+	<h3>ArcGIS Hub</h3>
+	<p></p>
+	<img src= "" alt="">
+	
+	<h3>Workflow Document</h3>
+	<p></p>
+	<img src= "" alt="">
+	
+</div>
+
+<footer>
+	<div class="footertext">
+		<p>This website is submitted in partial fulfillment of the requirements of the Geographic Information Systems Specialist program at Sir Sandford Fleming College.</p>
+		<p>Copyright 2024 Team HRS, Sir Sandford Fleming College</p>
+		<img src="images/hrspin.png" alt="mini logo">
+	</div>
+</footer>
+
+</body>
+</html>
