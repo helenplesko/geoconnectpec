@@ -44,17 +44,19 @@
 		<div class="bar3"></div>
 	  </div>
 	<a href="index.html">Home</a>
-	<a href="solutions.html">Solutions</a>
 	<div class="dropdown">
-		<button class="dropbtn">Methodology</button>
-		<!-- Attempts dropdown menu content -->
+		<button class="dropbtn">Solutions</button>
+		<!-- Dropdown menu content -->
 		<div class="dropdown-content">
-			<a href="data.html" class="active">Data Acquisition and Pre-Processing</a>
-			<a href="spatial.html">Spatial Analysis and Spatial Statistics</a>
-			<a href="visualization.html">Visualization</a>
-			<a href="customization.html">Programming and Customization</a>
+			<a href="database.html" class="active">Database</a>
+			<a href="webmaps.html">Web Maps</a>
+			<a href="dashboards.html">ArcGIS Dashboards</a>
+			<a href="experience.html">ArcGIS Experience Builder</a>
+			<a href="hub.html">ArcGIS Hub</a>
+			<a href="documentation.html">Documentation</a>
 		</div> 
 	</div>
+	<a href="methodology.html">Methodology</a>
 	<a href="team.html">Team</a>
 </div>
 
@@ -62,7 +64,7 @@
 <script src="js/javascript.js"></script>
 
 <div class="banner">
-	<h1>Methodology: Data Acquisition and Pre-Processing</h1>
+	<h1>Solution: Database Development</h1>
 </div>
 	
 <hr class="rounded">
@@ -71,69 +73,45 @@
 <div class="aboutproject">
 	
 	<h2>Data Acquisition</h2>
+
+	<p>Infrastructure data was requested from the following source:</p>
 	
 	<img src="" alt="The Corporation of the County of Prince Edward logo">
 	<h3>The Corporation of the County of Prince Edward</h3>
-	<p>Data acquired:</p>
-	<ul>
-		<li>Social infrastructure point data</li>
-	</ul>
 	<div class="buttoncontainer">
 		<a href="https://www.thecounty.ca/" class="collabbutton"><h4>Visit Website</h4></a>
 	</div>
+
+	<p>Data was also downloaded from the following open-sources:</p>
 	
 	<img src="" alt="Ontario Government logo">
 	<h3>The Ontario Government</h3>
-	<p>Data acquired:</p>
-	<ul>
-		<li>Road network</li>
-		<li>Watercourse</li>
-		<li>Waterbody</li>
-	</ul>
 	<div class="buttoncontainer">
 		<a href="https://geohub.lio.gov.on.ca/" class="collabbutton"><h4>Visit Website</h4></a>
 	</div>
 	
 	<img src="" alt="Government of Canada logo">
 	<h3>The Government of Canada</h3>
-	<p>Data acquired:</p>
-	<ul>
-		<li>Broadband</li>
-	</ul>
 	<div class="buttoncontainer">
 		<a href="https://search.open.canada.ca/opendata/" class="collabbutton"><h4>Visit Website</h4></a>
 	</div>
 	
-	<img src="" alt="Esri Living Atlas logo">
-	<h3>Esri Living Atlas</h3>
-	<p>Data acquired:</p>
-	<ul>
-		<li>2016 and 2021 household data</li>
-		<li>Education facilities</li>
-	</ul>
-	<div class="buttoncontainer">
-		<a href="https://livingatlas.arcgis.com/en/browse/#d=2" class="collabbutton"><h4>Visit Website</h4></a>
-	</div>
-	
 	<img src="" alt="Statistics Canada logo">
 	<h3>Statistics Canada</h3>
-	<p>Data acquired:</p>
-	<ul>
-		<li>PEC census boundary</li>
-		<li>PEC dissemination area boundary</li>
-	</ul>
 	<div class="buttoncontainer">
 		<a href="https://www12.statcan.gc.ca/census-recensement/index-eng.cfm?MM=1" class="collabbutton"><h4>Visit Website</h4></a>
 	</div>
-	
+
+	<p>In ArcGIS Pro and ArcGIS Online, data was imported from the following sources:</p>
+
+	<img src="" alt="Esri Living Atlas logo">
+	<h3>Esri Living Atlas</h3>
+	<div class="buttoncontainer">
+		<a href="https://livingatlas.arcgis.com/en/browse/#d=2" class="collabbutton"><h4>Visit Website</h4></a>
+	</div>
+
 	<img src="" alt="Environics Analytics logo">
 	<h3>Environics Analytics through ArcGIS Community Analyst</h3>
-	<p>Data acquired:</p>
-	<ul>
-		<li>2016 and 2021 population</li>
-		<li>2021 education attainment</li>
-		<li>2021 income</li>
-	</ul>
 	<div class="buttoncontainer">
 		<a href="https://environicsanalytics.com/en-ca/data" class="collabbutton"><h4>Visit Website</h4></a>
 	</div>
@@ -142,29 +120,27 @@
 	
 	<h2>Data Pre-Processing</h2>
 
-	<h3>The Corporation of the County of Prince Edward</h3>
-	<p>Data was clipped to PEC boundary, reprojected, filtered based on clients' needs. Unecessary fields were removed.</p>
-	<img src= "" alt="The Corporation of the County of Prince Edward">
-	
-	<h3>The Ontario Government</h3>
-	<p></p>
-	<img src= "" alt="Ontario Government data">
-	
-	<h3>The Government of Canada</h3>
-	<p></p>
-	<img src= "" alt="Government of Canada data">
-	
-	<h3>Esri Living Atlas</h3>
-	<p></p>
-	<img src= "" alt="Esri Living Atlas data">
-	
-	<h3>Statistics Canada</h3>
-	<p></p>
-	<img src= "" alt="Statistics Canada data">
-	
-	<h3>Environics Analytics</h3>
-	<p></p>
-	<img src= "" alt="Environics Analytics data">
+	<p>All data was clipped to Prince Edward County 2021 census boundary, reprojected, filtered based on clients' needs. 
+		Fields were optimized by renaming them, adding aliases, and removing ones that weren't necessary for the project or future use.</p>
+
+	<h2>Database Development</h2>
+
+	<p>Two geodatabases were developed in ArcGIS Pro:
+		<ol>
+			<li>One with a local projection of NAD 1983 UTM Zone 18N to be used internally.</li>
+			<li>One with projection WGS 1984 Web Mercator (auxiliary sphere) for web purposes.</li>
+		</ol>
+	</p>
+
+	<p>In both geodatabases:
+		<ul>
+			<li>Feature dataset for broadband data</li>
+			<li>Feature dataset for transit data</li>
+			<li>Domains for social infrastructure</li>
+			<li>Domains for road network</li>
+			<li>Subtypes for social infrastructure</li>
+		</ul>
+	</p>
 	
 </div>
 
