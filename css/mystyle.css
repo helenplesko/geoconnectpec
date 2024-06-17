@@ -531,3 +531,43 @@ footer {
 	background-color: #bddf90;
 	transition: 0.3s;
 }
+.table {
+    font-family: Oswald;
+    width: 100%;
+    border-collapse: separate; /* I have seperated the border to look atractive*/
+    border: 2px solid #333;
+    margin-left: auto;
+    margin-right: auto; /* to align the table center*/
+}
+.table th {
+    background-color: grey;
+    color: white;
+    font-weight: bold; /* for heading to appear bold*/
+    padding: 10px;
+    text-align: left;
+    overflow-x:auto;
+}
+.table td {
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+/* selects the odd rows to appear whitesmoke in color*/
+.table tr:nth-child(odd) {
+    background-color: lightskyblue; 
+}
+
+/* while the mouse curson points over the text it hover the space in red color*/
+.table tr:hover {
+    background-color: CornflowerBlue;
+}
+.table a:link {
+    background-color: skyblue;
+    color: blueviolet;
+    padding: 10px 10px;
+    text-decoration: underline;
+    display: inline-block;
+    border-radius: 50%;
+} 
+.table a:hover {
+    background-color: goldenrod;
+}
